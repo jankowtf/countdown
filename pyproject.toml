@@ -1,0 +1,8 @@
+[project]
+name = "countdown"
+version = "0.1.0"
+description = "Retro 80s-style countdown timer for livestreams and events"
+readme = "README.md"
+requires-python = ">=3.12"
+# No additional dependencies needed as we're using Tkinter which is included in standard Python
+dependencies = []
