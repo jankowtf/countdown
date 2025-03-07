@@ -2,7 +2,7 @@ import tkinter as tk
 import argparse
 import time
 from datetime import datetime, timedelta
-from digital_display import RetroDigitalDisplay
+from countdown.digital_display import RetroDigitalDisplay
 
 
 class AdvancedCountdownTimer:

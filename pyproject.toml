@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "countdown"
 version = "0.1.0"
@@ -6,3 +10,15 @@ readme = "README.md"
 requires-python = ">=3.12"
 # No additional dependencies needed as we're using Tkinter which is included in standard Python
 dependencies = []
+authors = [
+    {name = "Retro Timer Team"}
+]
+license = {text = "MIT"}
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[project.scripts]
+countdown-terminal = "countdown.terminal_countdown:main"
+countdown-gui = "countdown.main:main"
+countdown-advanced = "countdown.advanced_countdown:main"
